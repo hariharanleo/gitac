@@ -75,31 +75,31 @@ jobs:
           runtime_configuration: 'ISPT'
           deploy_automatically: ${{ steps.sync.outputs.automaticBuildJson }}
 
-  workflow_dispatch:
-     inputs:
-      clipath:
+          workflow_dispatch:
+              inputs:
+                clipath:
         # Host/IP adress input from users
-        description: CLI Execution path
-        default: C:\WorkbenchCLI
-        required: true
-      hciconnection:
-        # Host/IP adress input from users
-        description: HCI Connection
-        default: 10.10.1.172
-        required: true
-      port:
-        # passticket input from the user.
-        description: Port
-        default: "16196"
-        required: true
-      testFolderPath:
-        # passticket input from the user.
-        description: Test Location Path
-        default: C:\Users\sandhata\git\gitac\LAUNCHDB2\Tests\Scenarios
-        required: true
-      testScenario:
-        # Test Scenario name
-        description: Test Scenario Name
+                  description: CLI Execution path
+                  default: C:\WorkbenchCLI
+                  required: true
+                hciconnection:
+                  # Host/IP adress input from users
+                  description: HCI Connection
+                  default: 10.10.1.172
+                  required: true
+                port:
+                  # passticket input from the user.
+                  description: Port
+                  default: "16196"
+                  required: true
+                testFolderPath:
+                  # passticket input from the user.
+                  description: Test Location Path
+                  default: C:\Users\sandhata\git\gitac\LAUNCHDB2\Tests\Scenarios
+                  required: true
+                testScenario:
+                  # Test Scenario name
+                  description: Test Scenario Name
         default: CWKTDB2X_Scenario.testscenario
         required: true
       jclpath:
