@@ -1,0 +1,85 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<stub:stub xmlns:listructure="http://www.compuware.com/model/xml/listructure" xmlns:properties="http://www.compuware.com/model/xml/properties" xmlns:stub="http://www.compuware.com/model/xml/stub" alias="" disposition="MOD" encoding="1047" fileStatus="00" id="Tests/Stubs/CWKTDB2X_RPTFILE_FILE_01.stub" stubtype="QSAM" target="RPTFILE" token="60000">
+  <properties:properties>
+    <properties:property name="bufferType" type="string">OO</properties:property>
+    <properties:property name="rollover" type="string">0</properties:property>
+  </properties:properties>
+  <stub:description>Created: 29-Jan-2024, 12:02:46 PM</stub:description>
+  <stub:stubdata id="0" name="RPTFILE">
+    <stub:interface>../Interfaces/CWKTDB2X_RPTFILE_ERROR_LINE.interface#Tests/Interfaces/CWKTDB2X_RPTFILE_ERROR_LINE.interface</stub:interface>
+    <stub:output listructure="../Structures/CWKTDB2X_RPTFILE_ERROR-LINE.listructure#Tests/Structures/CWKTDB2X_RPTFILE_ERROR-LINE.listructure">
+      <stub:data baseType="listructure:structType ../Structures/CWKTDB2X_RPTFILE_ERROR-LINE.listructure#ERROR_LINE" id="arg0.ERROR_LINE">
+        <properties:properties>
+          <properties:property name="value" type="string">40C9D5E5C1D3C9C440C5D4D7D3D6E8C5C540E3E8D7C54040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040</properties:property>
+        </properties:properties>
+      </stub:data>
+    </stub:output>
+    <stub:checkconditions/>
+  </stub:stubdata>
+  <stub:stubdata id="1" name="RPTFILE">
+    <stub:interface>../Interfaces/CWKTDB2X_RPTFILE_ERROR_LINE.interface#Tests/Interfaces/CWKTDB2X_RPTFILE_ERROR_LINE.interface</stub:interface>
+    <stub:output listructure="../Structures/CWKTDB2X_RPTFILE_ERROR-LINE.listructure#Tests/Structures/CWKTDB2X_RPTFILE_ERROR-LINE.listructure">
+      <stub:data baseType="listructure:structType ../Structures/CWKTDB2X_RPTFILE_ERROR-LINE.listructure#ERROR_LINE" id="arg0.ERROR_LINE">
+        <properties:properties>
+          <properties:property name="value" type="string">40C9D5E5C1D3C9C440C5D4D7D3D6E8C5C540E3E8D7C54040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040</properties:property>
+        </properties:properties>
+      </stub:data>
+    </stub:output>
+    <stub:checkconditions/>
+  </stub:stubdata>
+  <stub:stubdata id="2" name="RPTFILE">
+    <stub:interface>../Interfaces/CWKTDB2X_RPTFILE_ERROR_LINE.interface#Tests/Interfaces/CWKTDB2X_RPTFILE_ERROR_LINE.interface</stub:interface>
+    <stub:output listructure="../Structures/CWKTDB2X_RPTFILE_ERROR-LINE.listructure#Tests/Structures/CWKTDB2X_RPTFILE_ERROR-LINE.listructure">
+      <stub:data baseType="listructure:structType ../Structures/CWKTDB2X_RPTFILE_ERROR-LINE.listructure#ERROR_LINE" id="arg0.ERROR_LINE">
+        <properties:properties>
+          <properties:property name="value" type="string">40C9D5E5C1D3C9C440C5D4D7D3D6E8C5C540E3E8D7C54040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040</properties:property>
+        </properties:properties>
+      </stub:data>
+    </stub:output>
+    <stub:checkconditions/>
+  </stub:stubdata>
+  <stub:stubdata id="3" name="RPTFILE">
+    <stub:interface>../Interfaces/CWKTDB2X_RPTFILE_ERROR_LINE.interface#Tests/Interfaces/CWKTDB2X_RPTFILE_ERROR_LINE.interface</stub:interface>
+    <stub:output listructure="../Structures/CWKTDB2X_RPTFILE_ERROR-LINE.listructure#Tests/Structures/CWKTDB2X_RPTFILE_ERROR-LINE.listructure">
+      <stub:data baseType="listructure:structType ../Structures/CWKTDB2X_RPTFILE_ERROR-LINE.listructure#ERROR_LINE" id="arg0.ERROR_LINE">
+        <properties:properties>
+          <properties:property name="value" type="string">40C9D5E5C1D3C9C440C5D4D7D3D6E8C5C540E3E8D7C54040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040</properties:property>
+        </properties:properties>
+      </stub:data>
+    </stub:output>
+    <stub:checkconditions/>
+  </stub:stubdata>
+  <stub:stubdata id="4" name="RPTFILE">
+    <stub:interface>../Interfaces/CWKTDB2X_RPTFILE_ERROR_LINE.interface#Tests/Interfaces/CWKTDB2X_RPTFILE_ERROR_LINE.interface</stub:interface>
+    <stub:output listructure="../Structures/CWKTDB2X_RPTFILE_ERROR-LINE.listructure#Tests/Structures/CWKTDB2X_RPTFILE_ERROR-LINE.listructure">
+      <stub:data baseType="listructure:structType ../Structures/CWKTDB2X_RPTFILE_ERROR-LINE.listructure#ERROR_LINE" id="arg0.ERROR_LINE">
+        <properties:properties>
+          <properties:property name="value" type="string">40C9D5E5C1D3C9C440C5D4D7D3D6E8C5C540E3E8D7C54040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040</properties:property>
+        </properties:properties>
+      </stub:data>
+    </stub:output>
+    <stub:checkconditions/>
+  </stub:stubdata>
+  <stub:stubdata id="5" name="RPTFILE">
+    <stub:interface>../Interfaces/CWKTDB2X_RPTFILE_BLANK_LINE.interface#Tests/Interfaces/CWKTDB2X_RPTFILE_BLANK_LINE.interface</stub:interface>
+    <stub:output listructure="../Structures/CWKTDB2X_RPTFILE_BLANK-LINE.listructure#Tests/Structures/CWKTDB2X_RPTFILE_BLANK-LINE.listructure">
+      <stub:data baseType="listructure:structType ../Structures/CWKTDB2X_RPTFILE_BLANK-LINE.listructure#BLANK_LINE" id="arg0.BLANK_LINE">
+        <properties:properties>
+          <properties:property name="value" type="string">404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040</properties:property>
+        </properties:properties>
+      </stub:data>
+    </stub:output>
+    <stub:checkconditions/>
+  </stub:stubdata>
+  <stub:stubdata id="6" name="RPTFILE">
+    <stub:interface>../Interfaces/CWKTDB2X_RPTFILE_EMP_TOTAL_DTL.interface#Tests/Interfaces/CWKTDB2X_RPTFILE_EMP_TOTAL_DTL.interface</stub:interface>
+    <stub:output listructure="../Structures/CWKTDB2X_RPTFILE_EMP-TOTAL-DTL.listructure#Tests/Structures/CWKTDB2X_RPTFILE_EMP-TOTAL-DTL.listructure">
+      <stub:data baseType="listructure:structType ../Structures/CWKTDB2X_RPTFILE_EMP-TOTAL-DTL.listructure#EMP_TOTAL_DTL" id="arg0.EMP_TOTAL_DTL">
+        <properties:properties>
+          <properties:property name="value" type="string">40404040E3D6E3C1D340404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040F04BF0F040</properties:property>
+        </properties:properties>
+      </stub:data>
+    </stub:output>
+    <stub:checkconditions/>
+  </stub:stubdata>
+</stub:stub>

@@ -1,0 +1,59 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<stub:stub xmlns:listructure="http://www.compuware.com/model/xml/listructure" xmlns:properties="http://www.compuware.com/model/xml/properties" xmlns:stub="http://www.compuware.com/model/xml/stub" alias="" disposition="SHR" encoding="1047" fileStatus="00" id="Tests/Stubs/CWKTDB2X_EMPFILE_FILE_01.stub" stubtype="QSAM" target="EMPFILE" token="70000">
+  <stub:description>Created: 29-Jan-2024, 12:02:46 PM</stub:description>
+  <stub:stubdata id="0" name="EMPFILE">
+    <stub:inputinterface>../Interfaces/CWKTDB2X_EMPFILE_EMPLOYEE_WORK_AREA.interface#Tests/Interfaces/CWKTDB2X_EMPFILE_EMPLOYEE_WORK_AREA.interface</stub:inputinterface>
+    <stub:input listructure="../Structures/CWKTDB2X_EMPFILE_EMPLOYEE-WORK-AREA.listructure#Tests/Structures/CWKTDB2X_EMPFILE_EMPLOYEE-WORK-AREA.listructure">
+      <stub:data baseType="listructure:structType ../Structures/CWKTDB2X_EMPFILE_EMPLOYEE-WORK-AREA.listructure#EMPLOYEE_WORK_AREA" id="arg0.EMPLOYEE_WORK_AREA">
+        <properties:properties>
+          <properties:property name="value" type="string">F0F0F34040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040</properties:property>
+        </properties:properties>
+      </stub:data>
+    </stub:input>
+    <stub:checkconditions/>
+  </stub:stubdata>
+  <stub:stubdata id="1" name="EMPFILE">
+    <stub:inputinterface>../Interfaces/CWKTDB2X_EMPFILE_EMPLOYEE_WORK_AREA.interface#Tests/Interfaces/CWKTDB2X_EMPFILE_EMPLOYEE_WORK_AREA.interface</stub:inputinterface>
+    <stub:input listructure="../Structures/CWKTDB2X_EMPFILE_EMPLOYEE-WORK-AREA.listructure#Tests/Structures/CWKTDB2X_EMPFILE_EMPLOYEE-WORK-AREA.listructure">
+      <stub:data baseType="listructure:structType ../Structures/CWKTDB2X_EMPFILE_EMPLOYEE-WORK-AREA.listructure#EMPLOYEE_WORK_AREA" id="arg0.EMPLOYEE_WORK_AREA">
+        <properties:properties>
+          <properties:property name="value" type="string">F0F0F24040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040</properties:property>
+        </properties:properties>
+      </stub:data>
+    </stub:input>
+    <stub:checkconditions/>
+  </stub:stubdata>
+  <stub:stubdata id="2" name="EMPFILE">
+    <stub:inputinterface>../Interfaces/CWKTDB2X_EMPFILE_EMPLOYEE_WORK_AREA.interface#Tests/Interfaces/CWKTDB2X_EMPFILE_EMPLOYEE_WORK_AREA.interface</stub:inputinterface>
+    <stub:input listructure="../Structures/CWKTDB2X_EMPFILE_EMPLOYEE-WORK-AREA.listructure#Tests/Structures/CWKTDB2X_EMPFILE_EMPLOYEE-WORK-AREA.listructure">
+      <stub:data baseType="listructure:structType ../Structures/CWKTDB2X_EMPFILE_EMPLOYEE-WORK-AREA.listructure#EMPLOYEE_WORK_AREA" id="arg0.EMPLOYEE_WORK_AREA">
+        <properties:properties>
+          <properties:property name="value" type="string">F0F0F14040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040</properties:property>
+        </properties:properties>
+      </stub:data>
+    </stub:input>
+    <stub:checkconditions/>
+  </stub:stubdata>
+  <stub:stubdata id="3" name="EMPFILE">
+    <stub:inputinterface>../Interfaces/CWKTDB2X_EMPFILE_EMPLOYEE_WORK_AREA.interface#Tests/Interfaces/CWKTDB2X_EMPFILE_EMPLOYEE_WORK_AREA.interface</stub:inputinterface>
+    <stub:input listructure="../Structures/CWKTDB2X_EMPFILE_EMPLOYEE-WORK-AREA.listructure#Tests/Structures/CWKTDB2X_EMPFILE_EMPLOYEE-WORK-AREA.listructure">
+      <stub:data baseType="listructure:structType ../Structures/CWKTDB2X_EMPFILE_EMPLOYEE-WORK-AREA.listructure#EMPLOYEE_WORK_AREA" id="arg0.EMPLOYEE_WORK_AREA">
+        <properties:properties>
+          <properties:property name="value" type="string">F0F0F44040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040</properties:property>
+        </properties:properties>
+      </stub:data>
+    </stub:input>
+    <stub:checkconditions/>
+  </stub:stubdata>
+  <stub:stubdata id="4" name="EMPFILE">
+    <stub:inputinterface>../Interfaces/CWKTDB2X_EMPFILE_EMPLOYEE_WORK_AREA.interface#Tests/Interfaces/CWKTDB2X_EMPFILE_EMPLOYEE_WORK_AREA.interface</stub:inputinterface>
+    <stub:input listructure="../Structures/CWKTDB2X_EMPFILE_EMPLOYEE-WORK-AREA.listructure#Tests/Structures/CWKTDB2X_EMPFILE_EMPLOYEE-WORK-AREA.listructure">
+      <stub:data baseType="listructure:structType ../Structures/CWKTDB2X_EMPFILE_EMPLOYEE-WORK-AREA.listructure#EMPLOYEE_WORK_AREA" id="arg0.EMPLOYEE_WORK_AREA">
+        <properties:properties>
+          <properties:property name="value" type="string">F0F0F54040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040</properties:property>
+        </properties:properties>
+      </stub:data>
+    </stub:input>
+    <stub:checkconditions/>
+  </stub:stubdata>
+</stub:stub>

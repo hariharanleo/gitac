@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExecutionContext xmlns="http://www.xact.dk/xatester/v/1" environment="c38facba-bcd0-4226-9584-7fe636c0a6ef" logLevel="INFO" remote="false" useSimulations="true" uploadResult="false" timeout="600" readTimeout="30" debuggerType="NONE" jobInfoInterval="3" useRepository="false">
+  <ExtensionData>
+    <Parameter key="unittest.loadlibraries">
+      <Value>ISPW.PLAY.DEV1.LOAD</Value>
+      <Value>DSNC10.DBCG.RUNLIB.LOAD</Value>
+      <Value>DSNB10.SDSNLOAD</Value>
+      <Value>CEE.SCEERUN</Value>
+    </Parameter>
+  </ExtensionData>
+  <XaUnit xmlns:data="http://www.xact.dk/xatester/data/v/1" componentNameUnderTest="CWKTDB2X" caseInsensitiveCompare="false" path="CWKTDB2X_Scenario.context">
+    <Test>
+      <Unittest testscenariopath="CWKTDB2X_Scenario.testscenario" moduleName="CWKTDB2X" />
+    </Test>
+  </XaUnit>
+</ExecutionContext>
