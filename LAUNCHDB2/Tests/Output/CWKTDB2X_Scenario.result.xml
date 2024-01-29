@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<result:DocumentRoot xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:result="http://www.compuware.com/model/xml/result">
+<?totaltestVersion 23.1.2.v20231101-1720_164?><!--BMC AMI DevX Total Test 23.1.2.v20231101-1720_164 29-Jan-2024, 12:55:25 PM-->  <result>
+    <testsuiteResult errorCount="18" failureCount="3" testCount="26">
+      <testscenarioResults errorCount="18" failureCount="3" testCount="26">
+        <testcaseResults errorCount="18" failureCount="3" testCount="26">
+          <results actualValue="0" expectedValue="0" name="Check for RETURN_CODE" result="Success"/>
+          <results actualHex="0006" actualValue="6" dataID="input.arg0.PARMINFO.PARM_LTH" expectedAssert="" expectedValue="5" message="Check for PARM_LTH failed" name="Check for PARM_LTH" result="Failure"/>
+          <results actualValue="00001" expectedValue="00001" name="Check for PARM_DATA" result="Success"/>
+          <results actualValue="0" expectedValue="0" name="Check for GRAND_TOTAL" result="Success"/>
+          <results actualHex="F0F0F0" actualValue="0" dataID="input.arg0.PARMINFO.TOTAL_RECORD" expectedAssert="" expectedValue="5" message="Check for TOTAL_RECORD failed" name="Check for TOTAL_RECORD" result="Failure"/>
+          <stubAssertion errorCount="1" testCount="1">
+            <properties>
+              <properties value="Stub CWKTDB2X_CWKTDATE_01 is not executed" name="Message" type="string"/>
+            </properties>
+            <stub href="CWKTDB2X_Scenario.archive#Tests/Stubs/CWKTDB2X_CWKTDATE_01.stub"/>
+          </stubAssertion>
+          <stubAssertion errorCount="6" failureCount="1" testCount="7">
+            <stubdataassertions failureCount="1" testCount="1">
+              <results actualHex="404040D7C1D9C1D4C5E3C5D940D3C5D5C7E3C840D6D940C4C1E3C140C9E240C9D5C3D6D9D9C5C3E340404040404040404040404040404040404040404040404040404040404040404040404040404040" actualValue="   PARAMETER LENGTH OR DATA IS INCORRECT" dataID="output0.arg0.ERROR_LINE.ERROR_LINE" expectedAssert="" expectedValue=" INVALID EMPLOYEE TYPE" message="Check for ERROR_LINE failed" name="Check for ERROR_LINE" result="Failure"/>
+              <stubdata href="CWKTDB2X_Scenario.archive#Tests/Stubs/CWKTDB2X_RPTFILE_FILE_01.stub.Tests/Stubs/CWKTDB2X_RPTFILE_FILE_01.stub.0"/>
+            </stubdataassertions>
+            <stubdataassertions errorCount="1" testCount="1">
+              <results message="Stub record has no output or output is empty." name="Stub record incomplete" result="Error"/>
+              <stubdata href="CWKTDB2X_Scenario.archive#Tests/Stubs/CWKTDB2X_RPTFILE_FILE_01.stub.Tests/Stubs/CWKTDB2X_RPTFILE_FILE_01.stub.1"/>
+            </stubdataassertions>
+            <stubdataassertions errorCount="1" testCount="1">
+              <results message="Stub record has no output or output is empty." name="Stub record incomplete" result="Error"/>
+              <stubdata href="CWKTDB2X_Scenario.archive#Tests/Stubs/CWKTDB2X_RPTFILE_FILE_01.stub.Tests/Stubs/CWKTDB2X_RPTFILE_FILE_01.stub.2"/>
+            </stubdataassertions>
+            <stubdataassertions errorCount="1" testCount="1">
+              <results message="Stub record has no output or output is empty." name="Stub record incomplete" result="Error"/>
+              <stubdata href="CWKTDB2X_Scenario.archive#Tests/Stubs/CWKTDB2X_RPTFILE_FILE_01.stub.Tests/Stubs/CWKTDB2X_RPTFILE_FILE_01.stub.3"/>
+            </stubdataassertions>
+            <stubdataassertions errorCount="1" testCount="1">
+              <results message="Stub record has no output or output is empty." name="Stub record incomplete" result="Error"/>
+              <stubdata href="CWKTDB2X_Scenario.archive#Tests/Stubs/CWKTDB2X_RPTFILE_FILE_01.stub.Tests/Stubs/CWKTDB2X_RPTFILE_FILE_01.stub.4"/>
+            </stubdataassertions>
+            <stubdataassertions errorCount="1" testCount="1">
+              <results message="Stub record has no output or output is empty." name="Stub record incomplete" result="Error"/>
+              <stubdata href="CWKTDB2X_Scenario.archive#Tests/Stubs/CWKTDB2X_RPTFILE_FILE_01.stub.Tests/Stubs/CWKTDB2X_RPTFILE_FILE_01.stub.5"/>
+            </stubdataassertions>
+            <stubdataassertions errorCount="1" testCount="1">
+              <results message="Stub record has no output or output is empty." name="Stub record incomplete" result="Error"/>
+              <stubdata href="CWKTDB2X_Scenario.archive#Tests/Stubs/CWKTDB2X_RPTFILE_FILE_01.stub.Tests/Stubs/CWKTDB2X_RPTFILE_FILE_01.stub.6"/>
+            </stubdataassertions>
+            <stub href="CWKTDB2X_Scenario.archive#Tests/Stubs/CWKTDB2X_RPTFILE_FILE_01.stub"/>
+          </stubAssertion>
+          <stubAssertion errorCount="0" failureCount="0" testCount="1">
+            <stubdataassertions errorCount="0" failureCount="0" testCount="1">
+              <stubdata href="CWKTDB2X_Scenario.archive#Tests/Stubs/CWKTDB2X_Select_1_SQL_01.stub.0"/>
+            </stubdataassertions>
+            <stub href="CWKTDB2X_Scenario.archive#Tests/Stubs/CWKTDB2X_Select_1_SQL_01.stub"/>
+          </stubAssertion>
+          <stubAssertion errorCount="0" failureCount="0" testCount="1">
+            <stubdataassertions errorCount="0" failureCount="0" testCount="1">
+              <stubdata href="CWKTDB2X_Scenario.archive#Tests/Stubs/CWKTDB2X_ROLLBACK_1_SQL_01.stub.0"/>
+            </stubdataassertions>
+            <stub href="CWKTDB2X_Scenario.archive#Tests/Stubs/CWKTDB2X_ROLLBACK_1_SQL_01.stub"/>
+          </stubAssertion>
+          <stubAssertion errorCount="10" testCount="10">
+            <properties>
+              <properties value="Stub CWKTDB2X_EMPLOYEE_CURSOR_SQL_01 is not executed" name="Message" type="string"/>
+            </properties>
+            <stub href="CWKTDB2X_Scenario.archive#Tests/Stubs/CWKTDB2X_EMPLOYEE_CURSOR_SQL_01.stub"/>
+          </stubAssertion>
+          <stubAssertion errorCount="1" testCount="1">
+            <properties>
+              <properties value="Stub CWKTDB2X_DATETIME_01 is not executed" name="Message" type="string"/>
+            </properties>
+            <stub href="CWKTDB2X_Scenario.archive#Tests/Stubs/CWKTDB2X_DATETIME_01.stub"/>
+          </stubAssertion>
+          <testcase href="CWKTDB2X_Scenario.archive#Tests/Scenarios/CWKTDB2X_Scenario.testscenario%23CWKTDB2XCase1"/>
+        </testcaseResults>
+        <testscenario href="CWKTDB2X_Scenario.archive#Tests/Scenarios/CWKTDB2X_Scenario.testscenario"/>
+      </testscenarioResults>
+      <testsuite href="CWKTDB2X_Scenario.archive#%5C.temp%5CCWKTDB2X_Scenario.testsuite"/>
+    </testsuiteResult>
+  </result>
+</result:DocumentRoot>

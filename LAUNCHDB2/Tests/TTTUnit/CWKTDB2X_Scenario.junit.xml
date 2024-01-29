@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?totaltestVersion 23.1.2.v20231101-1720_164?>
+<!--BMC AMI DevX Total Test 23.1.2.v20231101-1720_164 29-Jan-2024, 12:55:27 PM-->
+<testsuites>
+  <testsuite name="CWKTDB2X_Scenario" errors="0" tests="1" failures="1">
+    <testcase classname="CWKTDB2X_Scenario" name="Unit Test: Test Case: CWKTDB2XCase1 for program: CWKTDB2X">
+      <error>Failure    Linkage field: Message: Check for PARM_LTH failed. Actual: 6 Expected: 5
+Failure    Linkage field: Message: Check for TOTAL_RECORD failed. Actual: 0 Expected: 5
+Failure    Stub: CWKTDB2X_RPTFILE_FILE_01 Record: 00001 Message: Check for ERROR_LINE failed. Actual:    PARAMETER LENGTH OR DATA IS INCORRECT Expected:  INVALID EMPLOYEE TYPE
+Error      Stub: CWKTDB2X_RPTFILE_FILE_01 Record: 00002 Message: Stub record has no output or output is empty.
+Error      Stub: CWKTDB2X_RPTFILE_FILE_01 Record: 00003 Message: Stub record has no output or output is empty.
+Error      Stub: CWKTDB2X_RPTFILE_FILE_01 Record: 00004 Message: Stub record has no output or output is empty.
+Error      Stub: CWKTDB2X_RPTFILE_FILE_01 Record: 00005 Message: Stub record has no output or output is empty.
+Error      Stub: CWKTDB2X_RPTFILE_FILE_01 Record: 00006 Message: Stub record has no output or output is empty.
+Error      Stub: CWKTDB2X_RPTFILE_FILE_01 Record: 00007 Message: Stub record has no output or output is empty.</error>
+    </testcase>
+  </testsuite>
+</testsuites>

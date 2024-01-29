@@ -13,7 +13,7 @@
       <testcase:input listructure="../Structures/CWKTDB2X_PARMINFO.listructure#Tests/Structures/CWKTDB2X_PARMINFO.listructure">
         <testcase:data baseType="listructure:structType ../Structures/CWKTDB2X_PARMINFO.listructure#PARMINFO" id="arg0.PARMINFO">
           <properties:properties>
-            <properties:property name="value" type="string">0006F0F0F0F0F100000000000000</properties:property>
+            <properties:property name="value" type="string">0005F0F0F0F0F100000000000000</properties:property>
             <properties:property name="expectedValue" type="string">0005F0F0F0F0F100000000F0F0F5</properties:property>
             <properties:property name="address" type="string">1FF89568</properties:property>
           </properties:properties>

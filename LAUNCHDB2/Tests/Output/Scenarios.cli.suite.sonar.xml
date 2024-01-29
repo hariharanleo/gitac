@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?totaltestVersion 23.1.2.v20231101-1720_164?>
+<!--BMC AMI DevX Total Test 23.1.2.v20231101-1720_164 29-Jan-2024, 12:55:27 PM-->
+<testExecutions version="1">
+  <file path="C:\Users\sandhata\git\gitac\LAUNCHDB2\Tests\Scenarios\CWKTDB2X_Scenario.context">
+    <testCase name="Unit Test: Test Case: CWKTDB2XCase1 for program: CWKTDB2X" duration="0" />
+  </file>
+</testExecutions>

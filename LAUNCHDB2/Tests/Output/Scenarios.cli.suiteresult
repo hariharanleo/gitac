@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XaSuiteResult resultType="VERIFICATION_ERROR" containsSimulation="false">
+  <Message>Total 1 tests failed out of 1 tests.</Message>
+  <Started>20240129-12-55-05</Started>
+  <Ended>20240129-12-55-27</Ended>
+  <XaUnitResults>
+    <XaUnitResult path="../Scenarios/CWKTDB2X_Scenario.context" xaUnitPath="../Scenarios/CWKTDB2X_Scenario.context" resultPath="CWKTDB2X_Scenario.result" containsSimulation="false" resultType="VERIFICATION_ERROR" duration="22023" componentUnderTest="CWKTDB2X">
+      <CC />
+      <Message />
+      <DetailedMessage>Unit Test: Test Case: CWKTDB2XCase1 for program: CWKTDB2X
+Failure    Linkage field: Message: Check for PARM_LTH failed. Actual: 6 Expected: 5
+Failure    Linkage field: Message: Check for TOTAL_RECORD failed. Actual: 0 Expected: 5
+Failure    Stub: CWKTDB2X_RPTFILE_FILE_01 Record: 00001 Message: Check for ERROR_LINE failed. Actual:    PARAMETER LENGTH OR DATA IS INCORRECT Expected:  INVALID EMPLOYEE TYPE
+Error      Stub: CWKTDB2X_RPTFILE_FILE_01 Record: 00002 Message: Stub record has no output or output is empty.
+Error      Stub: CWKTDB2X_RPTFILE_FILE_01 Record: 00003 Message: Stub record has no output or output is empty.
+Error      Stub: CWKTDB2X_RPTFILE_FILE_01 Record: 00004 Message: Stub record has no output or output is empty.
+Error      Stub: CWKTDB2X_RPTFILE_FILE_01 Record: 00005 Message: Stub record has no output or output is empty.
+Error      Stub: CWKTDB2X_RPTFILE_FILE_01 Record: 00006 Message: Stub record has no output or output is empty.
+Error      Stub: CWKTDB2X_RPTFILE_FILE_01 Record: 00007 Message: Stub record has no output or output is empty.</DetailedMessage>
+    </XaUnitResult>
+  </XaUnitResults>
+</XaSuiteResult>
