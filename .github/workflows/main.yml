@@ -70,5 +70,7 @@ jobs:
       # Runs a single command using the runners shell
       - run: echo "${{ secrets.HCI_PASSWORD }}"
       - name: Calling the CLI function
-        run: ${{ inputs.clipath }}\\TotalTestUTCLI.bat -host "${{ inputs.hciconnection }}" -port "${{ inputs.port }}" -u "${{ inputs.userId }}" -p "${{ secrets.HCI_PASSWORD }}" -file "${{ inputs.testFolderPath }}" --runner-jcl "${{inputs.jclpath}}"
+        run: C:\Users\sandhata\Topaz\WorkbenchCLI\TotalTestFTCLI.bat -host 10.10.1.172 -port 16196 -u IBMUSER -p S3CURE -file C:\Users\sandhata\git\gitac\LAUNCHDB2\Tests\Scenarios --runner-jcl C:\Users\sandhata\git\gitac\LAUNCHDB2\Tests\JCL\Runner.jcl 
+
+
      
