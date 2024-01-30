@@ -33,7 +33,7 @@ jobs:
           winTopazPath: ${{ env.Win_Topaz_Location }}
           #containerCreation: 'per-branch'
           showEnv: true
-      
+     
       - name: Get automatic build parameters
         run: echo "automaticBuildJson=${{ steps.sync.outputs.automaticBuildJson }}"
       
@@ -61,70 +61,69 @@ jobs:
           echo "assignment id: ${{ steps.generate.outputs.assignment_id }}"
 
 
-# This is a basic workflow to help you get started with Actions for cli
+         # This is a basic workflow to help you get started with Actions for cli
 
-# Controls when the workflow will run
-
-workflow_dispatch:
-      inputs:
-       clipath:
+         # Controls when the workflow will run
+ 
+        inputs:
+        clipath:
         # Host/IP adress input from users
         description: CLI Execution path
         default: C:\WorkbenchCLI
         required: true
-      hciconnection:
+        hciconnection:
         # Host/IP adress input from users
-        description: HCI Connection
-        default: 10.10.1.172
-        required: true
-      port:
+         description: HCI Connection
+         default: 10.10.1.172
+         required: true
+        port:
         # passticket input from the user.
-        description: Port
-        default: "16196"
-        required: true
-      testFolderPath:
+         description: Port
+         default: "16196"
+         required: true
+        testFolderPath:
         # passticket input from the user.
-        description: Test Location Path
-        default: C:\Users\sandhata\git\gitac\LAUNCHDB2\Tests\Scenarios
-        required: true
-      testScenario:
+         description: Test Location Path
+         default: C:\Users\sandhata\git\gitac\LAUNCHDB2\Tests\Scenarios
+         required: true
+        testScenario:
         # Test Scenario name
-        description: Test Scenario Name
-        default: CWKTDB2X_Scenario.testscenario
-        required: true
-      jclpath:
+         description: Test Scenario Name
+         default: CWKTDB2X_Scenario.testscenario
+         required: true
+        jclpath:
       # jcl runner
-        description: jcl runner name
-        default: C:\Users\sandhata\git\gitac\LAUNCHDB2\Tests\JCL\Runner.jcl
-        required: true
-      workspace:
+         description: jcl runner name
+         default: C:\Users\sandhata\git\gitac\LAUNCHDB2\Tests\JCL\Runner.jcl
+         required: true
+        workspace:
         # Workspcae location of the customer input from the user.
-        description: CLI path
-        default: C:\Users\sandhata\Compuware\Workbench\workspace_01
-        required: true        
-      repository_server:
+         description: CLI path
+         default: C:\Users\sandhata\Compuware\Workbench\workspace_01
+         required: true        
+        repository_server:
         # repository server input from the user.
-        description: Repository Server
-        default: "http://10.10.1.174:48226/"
-        required: true
-      userId:
+         description: Repository Server
+         default: "http://10.10.1.174:48226/"
+         required: true
+        userId:
         # repository server input from the user.
-        description: HCI User ID
-        default: "IBMUSER"
-        required: true
+         description: HCI User ID
+         default: "IBMUSER"
+         required: true
         
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
-  # This workflow contains a single job called "build"
-  generate:
+     # A workflow run is made up of one or more jobs that can run sequentially or in parallel
+      # This workflow contains a single job called "build"
+        build:
     # The type of runner that the job will run on
-    runs-on: self-hosted
-    env:
-      HCI_PASSWORD: ${{ secrets.HCI_PASSWORD }}
+        runs-on: self-hosted
+        env:
+        HCI_PASSWORD: ${{ secrets.HCI_PASSWORD }}
     #runs-on: windows-latest
     # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:
+        steps:
       - run: git config --global core.longpaths true     
-      # Runs a single command using the runners shell
+       # Runs a single command using the runners shell
       - run: echo "${{ secrets.HCI_PASSWORD }}"
       - name: Calling the CLI function
         run: C:\WorkbenchCLI\TotalTestFTCLI.bat -host 10.10.1.172 -port 16196 -u IBMUSER -p S3CURE -file C:\Users\sandhata\git\gitac\LAUNCHDB2\Tests\Scenarios --runner-jcl C:\Users\sandhata\git\gitac\LAUNCHDB2\Tests\JCL\Runner.jcl 
