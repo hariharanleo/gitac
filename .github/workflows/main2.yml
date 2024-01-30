@@ -65,9 +65,9 @@ jobs:
 
 # Controls when the workflow will run
 
-    workflow_dispatch:
-     inputs:
-      clipath:
+workflow_dispatch:
+      inputs:
+       clipath:
         # Host/IP adress input from users
         description: CLI Execution path
         default: C:\WorkbenchCLI
@@ -115,11 +115,11 @@ jobs:
         
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
   # This workflow contains a single job called "build"
-  build:
+  generate:
     # The type of runner that the job will run on
     runs-on: self-hosted
     env:
-     HCI_PASSWORD: ${{ secrets.HCI_PASSWORD }}
+      HCI_PASSWORD: ${{ secrets.HCI_PASSWORD }}
     #runs-on: windows-latest
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
