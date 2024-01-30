@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <XaSuiteResult resultType="SUCCESS" containsSimulation="false">
   <Message>Total 1 test scenarios were successfully executed</Message>
-  <Started>20240129-16-18-23</Started>
-  <Ended>20240129-16-18-47</Ended>
+  <Started>20240130-17-08-13</Started>
+  <Ended>20240130-17-08-35</Ended>
   <XaUnitResults>
-    <XaUnitResult path="../Scenarios/CWKTDB2X_Scenario.context" xaUnitPath="../Scenarios/CWKTDB2X_Scenario.context" resultPath="CWKTDB2X_Scenario.result" containsSimulation="false" resultType="SUCCESS" duration="23813" componentUnderTest="CWKTDB2X">
+    <XaUnitResult path="../Scenarios/CWKTDB2X_Scenario.context" xaUnitPath="../Scenarios/CWKTDB2X_Scenario.context" resultPath="CWKTDB2X_Scenario.result" containsSimulation="false" resultType="SUCCESS" duration="22321" componentUnderTest="CWKTDB2X">
       <CC />
       <Message />
       <DetailedMessage />
