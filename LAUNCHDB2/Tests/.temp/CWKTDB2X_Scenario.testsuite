@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite:testsuite xmlns:testsuite="http://www.compuware.com/model/xml/testsuite" alias="" id="%5C.temp%5CCWKTDB2X_Scenario.testsuite">
-  <testsuite:description></testsuite:description>
-  <testsuite:testscenario>../Scenarios/CWKTDB2X_Scenario.testscenario#Tests/Scenarios/CWKTDB2X_Scenario.testscenario</testsuite:testscenario>
-</testsuite:testsuite>
