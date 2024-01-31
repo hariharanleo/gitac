@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <XaUnitResult resultType="SUCCESS" containsSimulation="false">
-  <ExecutionId>6d4b2312-c0ab-4ff5-ab09-95672ee27c6c</ExecutionId>
+  <ExecutionId>40858fd6-a649-48e5-8715-9992aa7111e3</ExecutionId>
   <Message />
   <AST>
     <XaUnit xmlns="http://www.xact.dk/xatester/v/1" xmlns:data="http://www.xact.dk/xatester/data/v/1" caseInsensitiveCompare="false">
@@ -25,6 +25,6 @@
       <ExternalResources />
     </ExecutionContext>
   </Context>
-  <Started>20240131-12-04-11</Started>
-  <Ended>20240131-12-04-34</Ended>
+  <Started>20240131-12-46-45</Started>
+  <Ended>20240131-12-47-11</Ended>
 </XaUnitResult>

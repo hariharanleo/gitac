@@ -33,9 +33,9 @@ ispwApplication:
     types:
     - fileExtension: cmap
       ispwType: CMAP
-  - path: \LAUNCHDB2/COB/CWKTDB2X.CMNDN
+  - path: C:\Users\sandhata\git\gitac\LAUNCHDB2\COB
     types:
-    - fileExtension: cob
+    - fileExtension: CMNDN
       ispwType: COB
       genParms: WZGPARMS
       progType: 'Yes'
