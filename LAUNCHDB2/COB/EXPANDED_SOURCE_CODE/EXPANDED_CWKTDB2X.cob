@@ -123,7 +123,7 @@
                02  ERROR-TEXT  PIC X(120) OCCURS 10 TIMES
                                           INDEXED BY ERROR-INDEX.
        77  ERROR-TEXT-LEN      PIC S9(9)  COMP VALUE +120.
-
+ 
        01  SWITCHES.
            05  JUMP-SW                PIC X        VALUE 'N'.
                88  JUMPING                         VALUE 'Y'.
@@ -467,7 +467,7 @@
       *    THIS INSURES PROGRAM PRODUCES THE SAME RESULTS EACH TIME.
            EXEC SQL ROLLBACK END-EXEC.
            GOBACK.
-
+ 
 *********
 *********  DIFFERENT PROCESSING OCCURS BASED ON EMPLOYEE TYPE.  THERE
 *********  ARE 3 VALID EMPLOYEE TYPES.  IF A RECORD IS READ CONTAINING
