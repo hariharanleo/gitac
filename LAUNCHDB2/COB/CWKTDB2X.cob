@@ -2,7 +2,7 @@
        PROGRAM-ID.       CWKTDB2X.
       ******************************************************************
       *                                                                *
-      ******      C O M P U W A R E   C O R P O R A T I O N       ******
+      ******      C O M P U W R E   C O R P O R A T I O N         ******
       *                                                                *
       *  THIS PROGRAM IS A DB2 COBOL DEMO PROGRAM USED FOR             *
       *  TOPAZ FOR TOTAL TEST TRAINING SESSIONS.                       *
