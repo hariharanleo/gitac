@@ -33,7 +33,7 @@ ispwApplication:
     types:
     - fileExtension: cmap
       ispwType: CMAP
-  - path: \COB
+  - path: \LAUNCHDB2
     types:
     - fileExtension: CMNDN
       ispwType: COB
