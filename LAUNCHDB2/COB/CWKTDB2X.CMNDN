@@ -12,7 +12,7 @@
       *  OUTPUT FILE - EMPLOYEE COMPENSATION REPORT                    *
       *              - REGIONAL SALES REPORT                           *
       *                                                                *
-      *  RUN JCL     - STORED IN THE ECC SLCXCNTL FILE - LAUNCHDB      *
+      *  RUN JCL     - STORED IN THE ECC SLCXCNTL FILE - LAUNCHDA      *
       *                                                                *
       ******************************************************************
        ENVIRONMENT DIVISION.
