@@ -10,7 +10,7 @@
       *  INPUT FILE  - EMPLOYEE WAGE INFORMATION                       *
       *              - STORED IN THE ECC SLCXCNTL FILE - TTTDAT        *
       *  OUTPUT FILE - EMPLOYEE COMPENSATION REPORT                    *
-      *              - REGIONAL SALES REPORT                           *
+      *              - REGIONAL SALES REPOR                            *
       *                                                                *
       *  RUN JCL     - STORED IN THE ECC SLCXCNTL FILE - LAUNCHDX      *
       *                                                                *
