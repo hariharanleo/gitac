@@ -35,8 +35,12 @@ ispwApplication:
       ispwType: CMAP
   - path: \COB
     types:
-    - fileExtension: cob
+    - fileExtension: CMNDN
       ispwType: COB
+      genParms: WZGPARMS
+      progType: 'Yes'
+      cics: 'No'
+      sql: 'Yes'
   - path: \COPY
     types:
     - fileExtension: copy
