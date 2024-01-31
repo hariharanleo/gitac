@@ -14,5 +14,6 @@
 	<natures>
 		<nature>com.compuware.unittest.eclipse.common.ProjectNature</nature>
 		<nature>com.compuware.xatester.ui.XaTesterNature</nature>
+		<nature>com.compuware.ispw.project.natures.IspwGitProjectNature</nature>
 	</natures>
 </projectDescription>
