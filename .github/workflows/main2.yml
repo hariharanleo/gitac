@@ -58,31 +58,27 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
-  build:
+- job: build
     # The type of runner that the job will run on
-    runs-on: self-hosted
-    env:
-     HCI_PASSWORD: ${{ secrets.HCI_PASSWORD }}
+  runs-on: self-hosted
+  env:
+  HCI_PASSWORD: ${{ secrets.HCI_PASSWORD }}
     #runs-on: windows-latest
     # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:
+  steps:
       - run: git config --global core.longpaths true     
       # Runs a single command using the runners shell
       - run: echo "${{ secrets.HCI_PASSWORD }}"
       - name: Calling the CLI function
         run: C:\WorkbenchCLI\TotalTestFTCLI.bat -host 10.10.1.172 -port 16196 -u IBMUSER -p S3CURE -file C:\Users\sandhata\git\gitac\LAUNCHDB2\Tests\Scenarios --runner-jcl C:\Users\sandhata\git\gitac\LAUNCHDB2\Tests\JCL\Runner.jcl 
-
-     
-
-
-
-  generate:
-    name: sync, build & deploy
-    runs-on: [self-hosted,Windows]
-    env:
+  
+- job: generate
+  name: sync, build & deploy
+  runs-on: [self-hosted,Windows]
+  env:
       Win_Topaz_Location: 'C:\WorkbenchCLI'
     
-    steps:
+  steps:
       - name: checkout step
         uses: actions/checkout@v2
         with:
