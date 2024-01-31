@@ -1,5 +1,5 @@
-17:51:00.085 INFO      Engine           Test Scenario execution started
-17:51:00.090 INFO      Engine           Using context settings:
+09:59:10.507 INFO      Engine           Test Scenario execution started
+09:59:10.513 INFO      Engine           Using context settings:
   Engine Version                : 23.1.2.v20231101-1720_164
   Environment id                : 10.10.1.172:16196
   Environment type              : Batch
@@ -16,22 +16,22 @@
   Use Repository Server         : true
   Account Information           : 
   Dataset High Level Qualifier  : 
-17:51:00.091 INFO      Engine           Setting variables from context and context data extensions
-17:51:00.091 INFO      Engine             id: environmentId      value: 10.10.1.172:16196
-17:51:00.094 INFO      Engine             id: environmentType    value: BATCH
-17:51:00.095 INFO      Engine             id: userId             value: IBMUSER
-17:51:00.096 INFO      Engine             id: accountingInfo     value: 
-17:51:00.096 INFO      Engine             id: datasetHQL         value: 
-17:51:00.105 INFO      Unittest         Interpreting Unittest of module: CWKTDB2X testscenario path: CWKTDB2X_Scenario.testscenario
-17:51:03.568 INFO      Unittest         Static JCL is being used, path is: C:/Users/sandhata/git/gitac/LAUNCHDB2/Tests/JCL/Runner.jcl
-17:51:11.471 INFO      10.10.1.172-16196 Sending Job execution request to Host 
-17:51:17.107 INFO      10.10.1.172-16196 Job execution completed with status:
+09:59:10.519 INFO      Engine           Setting variables from context and context data extensions
+09:59:10.520 INFO      Engine             id: environmentId      value: 10.10.1.172:16196
+09:59:10.525 INFO      Engine             id: environmentType    value: BATCH
+09:59:10.526 INFO      Engine             id: userId             value: IBMUSER
+09:59:10.527 INFO      Engine             id: accountingInfo     value: 
+09:59:10.527 INFO      Engine             id: datasetHQL         value: 
+09:59:10.540 INFO      Unittest         Interpreting Unittest of module: CWKTDB2X testscenario path: CWKTDB2X_Scenario.testscenario
+09:59:15.498 INFO      Unittest         Static JCL is being used, path is: C:/Users/sandhata/git/gitac/LAUNCHDB2/Tests/JCL/Runner.jcl
+09:59:24.862 INFO      10.10.1.172-16196 Sending Job execution request to Host 
+09:59:30.708 INFO      10.10.1.172-16196 Job execution completed with status:
   Job status     : COMPLETED
-  Job status msg : Job JOBNAME(JOB05516) ended with return code: 0000
+  Job status msg : Job JOBNAME(JOB05531) ended with return code: 0000
   Job name       : JOBNAME
-  Job id         : JOB05516
+  Job id         : JOB05531
   Return code    : 0000
   Abend code     : 
   Abend reason   : 
-17:51:21.269 INFO      Unittest         Execution completed
-17:51:21.271 INFO      Engine           Test Scenario execution ended
+09:59:35.424 INFO      Unittest         Execution completed
+09:59:35.424 INFO      Engine           Test Scenario execution ended
