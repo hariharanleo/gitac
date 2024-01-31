@@ -33,7 +33,7 @@ ispwApplication:
     types:
     - fileExtension: cmap
       ispwType: CMAP
-  - path: C:\Users\sandhata\git\gitac\LAUNCHDB2\COB
+  - path: \LAUNCHDB2\COB
     types:
     - fileExtension: CMNDN
       ispwType: COB
