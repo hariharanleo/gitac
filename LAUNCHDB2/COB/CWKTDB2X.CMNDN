@@ -7,7 +7,7 @@
       *  THIS PROGRAM IS A DB2 COBOL DEMO PROGRAM USED FOR             *
       *  TOPAZ FOR TOTAL TEST TRAINING SESSIONS.                       *
       *                                                                *
-      *  INPUT FILE  - EMPLOYEE WAGE INFORMATIO                        *
+      *  INPUT FILE  - EMPLOYEE WAGE INFORMATION                       *
       *              - STORED IN THE ECC SLCXCNTL FILE - TTTDAT        *
       *  OUTPUT FILE - EMPLOYEE COMPENSATION REPORT                    *
       *              - REGIONAL SALES REPORT                           *
