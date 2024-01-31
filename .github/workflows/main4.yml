@@ -82,6 +82,7 @@ Stages:
 # Controls when the workflow will run
 
 - stage: stage2
+  dependson: []
   jobs:
   - job: job2
     name: build
