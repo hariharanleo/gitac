@@ -1,8 +1,7 @@
 name: code-pipeline-sync-local, generate and deploy
 
 on: [push]
-
- workflow_dispatch:
+workflow_dispatch:
      inputs:
       clipath:
         # Host/IP adress input from users
@@ -51,7 +50,7 @@ on: [push]
         required: true
 jobs:
   generate
-  name: sync, build & test
+  - name: sync, build & test
   runs-on: [self-hosted,Windows]
   env:
       Win_Topaz_Location: 'C:\WorkbenchCLI'
