@@ -1,7 +1,8 @@
 name: code-pipeline-sync-local, generate and deploy
 
-on: [push]
-workflow_dispatch:
+on: 
+   push:
+   workflow_dispatch:
      inputs:
      clipath:
         # Host/IP adress input from users
