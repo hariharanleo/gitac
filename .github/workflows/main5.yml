@@ -1,0 +1,142 @@
+name: code-pipeline-sync-local, generate and deploy
+
+
+on: [push]
+
+jobs:
+- job: generate
+  name: sync, build & deploy
+  runs-on: [self-hosted,Windows]
+  env:
+      Win_Topaz_Location: 'C:\WorkbenchCLI'
+    
+  steps:
+      - name: checkout step
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      
+      - name: sync step
+        uses: bmc-compuware/ispw-sync-local@main
+        id: sync
+        with:
+          host: 'BMC.POPUP-MAINFRAME.COM'
+          port: 16196
+          uid: ${{ secrets.TSOUSER }}
+          pass: ${{ secrets.TSOPASS }}
+          runtimeConfiguration: 'ISPT'
+          stream: 'PLAY'
+          application: 'PLAY'
+          checkoutLevel: 'DEV1'
+          gitUid: ${{ secrets.GITUID }}
+          gitToken: ${{ secrets.ACTIONS_KEY }}
+          winTopazPath: ${{ env.Win_Topaz_Location }}
+          #containerCreation: 'per-branch'
+          showEnv: true
+      
+      - name: Get automatic build parameters
+        run: echo "automaticBuildJson=${{ steps.sync.outputs.automaticBuildJson }}"
+      
+      - name: generate step
+        uses: bmc-compuware/ispw-generate@main
+        id: generate
+        if: ${{ steps.sync.outputs.automaticBuildJson != '{}'}}
+        with:
+          ces_url: 'http://10.10.1.174:48226/'
+          ces_token: ${{ secrets.CES_TOKEN }}
+          srid: 'ISPT'
+          runtime_configuration: 'ISPT'
+          generate_automatically: ${{ steps.sync.outputs.automaticBuildJson }}
+      
+      - name: generate output
+        if: success() || failure()
+        run: |
+          echo "failed count: ${{ steps.generate.outputs.generate_failed_count }}"
+          echo "success count: ${{ steps.generate.outputs.generate_success_count }}"
+          echo "timeout? ${{ steps.generate.outputs.is_timed_out }} "
+          echo "has failure? ${{ steps.generate.outputs.has_failures }}"
+          echo "task count: ${{ steps.generate.outputs.task_count }}"
+          echo "set id: ${{ steps.generate.outputs.set_id }}"
+          echo "url: ${{ steps.generate.outputs.url }}"
+          echo "assignment id: ${{ steps.generate.outputs.assignment_id }}"
+          
+      - name: wait 30 second for generate to complete
+        run: Start-Sleep -s 30
+        shell: powershell
+      
+      - name: deploy
+        if: ${{ steps.sync.outputs.automaticBuildJson != '{}'}}
+        uses: bmc-compuware/ispw-deploy@main
+        id: deploy
+        with:
+          ces_url: 'http://10.10.1.174:48226/'
+          ces_token: ${{ secrets.CES_TOKEN }}
+          srid: 'ISPT'
+          runtime_configuration: 'ISPT'
+          deploy_automatically: ${{ steps.sync.outputs.automaticBuildJson }}
+
+  workflow_dispatch:
+     inputs:
+      clipath:
+        # Host/IP adress input from users
+        description: CLI Execution path
+        default: C:\WorkbenchCLI
+        required: true
+      hciconnection:
+        # Host/IP adress input from users
+        description: HCI Connection
+        default: 10.10.1.172
+        required: true
+      port:
+        # passticket input from the user.
+        description: Port
+        default: "16196"
+        required: true
+      testFolderPath:
+        # passticket input from the user.
+        description: Test Location Path
+        default: C:\Users\sandhata\git\gitac\LAUNCHDB2\Tests\Scenarios
+        required: true
+      testScenario:
+        # Test Scenario name
+        description: Test Scenario Name
+        default: CWKTDB2X_Scenario.testscenario
+        required: true
+      jclpath:
+      # jcl runner
+        description: jcl runner name
+        default: C:\Users\sandhata\git\gitac\LAUNCHDB2\Tests\JCL\Runner.jcl
+        required: true
+      workspace:
+        # Workspcae location of the customer input from the user.
+        description: CLI path
+        default: C:\Users\sandhata\Compuware\Workbench\workspace_01
+        required: true        
+      repository_server:
+        # repository server input from the user.
+        description: Repository Server
+        default: "http://10.10.1.174:48226/"
+        required: true
+      userId:
+        # repository server input from the user.
+        description: HCI User ID
+        default: "IBMUSER"
+        required: true
+        
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+- job: build
+  # This workflow contains a single job called "build"
+     # The type of runner that the job will run on
+  runs-on: self-hosted
+  env:
+     HCI_PASSWORD: ${{ secrets.HCI_PASSWORD }}
+    #runs-on: windows-latest
+    # Steps represent a sequence of tasks that will be executed as part of the job
+  steps:
+      - run: git config --global core.longpaths true     
+      # Runs a single command using the runners shell
+      - run: echo "${{ secrets.HCI_PASSWORD }}"
+      - name: Calling the CLI function
+        run: C:\WorkbenchCLI\TotalTestFTCLI.bat -host 10.10.1.172 -port 16196 -u IBMUSER -p S3CURE -file C:\Users\sandhata\git\gitac\LAUNCHDB2\Tests\Scenarios --runner-jcl C:\Users\sandhata\git\gitac\LAUNCHDB2\Tests\JCL\Runner.jcl 
+
+     
