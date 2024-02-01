@@ -49,8 +49,8 @@ workflow_dispatch:
         default: "IBMUSER"
         required: true
 jobs:
-  generate
-  - name: sync, build & test
+  generate:
+  name: sync, build & deploy 
   runs-on: [self-hosted,Windows]
   env:
       Win_Topaz_Location: 'C:\WorkbenchCLI'
