@@ -3,60 +3,59 @@ name: code-pipeline-sync-local, generate and deploy
 on: [push]
 workflow_dispatch:
      inputs:
-      clipath:
+     clipath:
         # Host/IP adress input from users
         description: CLI Execution path
         default: C:\WorkbenchCLI
         required: true
-      hciconnection:
+     hciconnection:
         # Host/IP adress input from users
         description: HCI Connection
         default: 10.10.1.172
         required: true
-      port:
+     port:
         # passticket input from the user.
         description: Port
         default: "16196"
         required: true
-      testFolderPath:
+     testFolderPath:
         # passticket input from the user.
         description: Test Location Path
         default: C:\Users\sandhata\git\gitac\LAUNCHDB2\Tests\Scenarios
         required: true
-      testScenario:
+     testScenario:
         # Test Scenario name
         description: Test Scenario Name
         default: CWKTDB2X_Scenario.testscenario
         required: true
-      jclpath:
+     jclpath:
       # jcl runner
         description: jcl runner name
         default: C:\Users\sandhata\git\gitac\LAUNCHDB2\Tests\JCL\Runner.jcl
         required: true
-      workspace:
+     workspace:
         # Workspcae location of the customer input from the user.
         description: CLI path
         default: C:\Users\sandhata\Compuware\Workbench\workspace_01
         required: true        
-      repository_server:
+     repository_server:
         # repository server input from the user.
         description: Repository Server
         default: "http://10.10.1.174:48226/"
         required: true
-      userId:
+     userId:
         # repository server input from the user.
         description: HCI User ID
         default: "IBMUSER"
         required: true
 jobs:
   generate:
-  name: sync, build & deploy 
-  runs-on: [self-hosted,Windows]
-  env:
+    name: sync, build & deploy 
+    runs-on: [self-hosted,Windows]
+    env:
       Win_Topaz_Location: 'C:\WorkbenchCLI'
-	  HCI_PASSWORD: ${{ secrets.HCI_PASSWORD }}
-    
-  steps:
+           
+    steps:
       - name: checkout step
         uses: actions/checkout@v2
         with:
