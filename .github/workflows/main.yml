@@ -72,7 +72,7 @@ jobs:
           pass: ${{ secrets.TSOPASS }}
           runtimeConfiguration: 'ISPT'
           stream: 'PLAY'
-          application: 'PLAY'
+          application: 'TEST'
           checkoutLevel: 'DEV1'
           gitUid: ${{ secrets.GITUID }}
           gitToken: ${{ secrets.ACTIONS_KEY }}
