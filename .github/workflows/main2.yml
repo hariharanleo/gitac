@@ -109,21 +109,14 @@ jobs:
       - name: wait 30 second for generate to complete
         run: Start-Sleep -s 30
         shell: powershell
-
-      - name: sync test
-        uses: bmc-compuware/ispw-sync-local@main
-        id: test
-        with:
-          host: '10.10.1.172'
-          port: 16196
-          jclpath: C:\Users\sandhata\git\gitac\LAUNCHDB2\Tests\JCL\Runner.jcl
-          testFolderPath: C:\Users\sandhata\git\gitac\LAUNCHDB2\Tests\Scenarios
-          uid: ${{ secrets.TSOUSER }}
-          pass: ${{ secrets.TSOPASS }}
-          gitUid: ${{ secrets.GITUID }}
-          gitToken: ${{ secrets.ACTIONS_KEY }}
-          winTopazPath: ${{ env.Win_Topaz_Location }}
-               
+        
+  test:
+    name: test 
+    runs-on: [self-hosted,Windows]
+    env:
+      HCI_PASSWORD: ${{ secrets.HCI_PASSWORD }}
+      runs-on: windows-latest
+    steps:  
       - run: git config --global core.longpaths true     
       # Runs a single command using the runners shell
       - run: echo "${{ secrets.HCI_PASSWORD }}"
