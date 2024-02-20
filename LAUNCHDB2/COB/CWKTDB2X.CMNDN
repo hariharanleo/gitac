@@ -10,7 +10,7 @@
       *  INPUT FILE  - EMPLOYEE WAGE INFORMATION                       *
       *              - STORED IN THE ECC SLCXCNTL FILE - TTTDAS        *
       *  OUTPUT FILE - EMPLOYEE COMPENSATION REPORT                    *
-      *              - REGIONAL SALES REPOR                            *
+      *              - REGALES REPOR                            *
       *                                                                *
       *  RUN JCL     - STORED IN THE ECC SLCXCNTL FILE - LAUNCH        *
       *                                                                *
